@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Hero, CustomFilter, SearchBar, ComputerCard } from "@/components"
+import { Hero, CustomFilter, SearchBar, ComputerCard, Flyer } from "@/components"
 import type { ComputerProps } from "@/types";
 import { computers, fuels, yearsOfProduction } from "@/constants";
 import { useState } from "react";
@@ -45,6 +45,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Hero />
+      {/* <Flyer /> */}
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">

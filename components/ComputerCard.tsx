@@ -20,7 +20,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         </h2>
       </div>
 
-      <div className='flex mt-1 text-[20px] font-extrabold items-end flex-col w-full'>
+      <div className='flex mt-1 text-[20px] font-bold items-end flex-col w-full'>
         <p className='flex flex-col items-end justify-end'>
         <span className='text-[14px]'>
           Precio regular
@@ -31,7 +31,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         </p>
       </div>
 
-      <p className='flex mt-1 text-[32px] font-extrabold'>
+      <p className='flex mt-1 text-[32px] font-bold'>
         <span className='self-start text-[14px]'>
           -20%
         </span>
@@ -93,7 +93,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         <div className='car-card__btn-container'>
           <CustomButton
             title='Ver Más'
-            containerStyles='w-full py-[16px] rounded-full bg-[#FB6D48]'
+            containerStyles='w-full py-[16px] rounded-full bg-[#4964fb]'
             btnType="button"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             rightIcon="/right-arrow.svg"

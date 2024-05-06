@@ -13,7 +13,7 @@ const Hero = () => {
     <div className='hero'>
         <div className='flex-1 pt-36 padding-x'>
             <h1 className='hero__title'>
-              ¡Conviértete en el mejor con nuestra línea gamer!
+              <span className='text-[#4964fb]'>Gaming</span> al siguiente <span className='text-[#4964fb]'>nivel</span>
             </h1>
             <br />
             <p className='hero__subtitle'>
@@ -23,7 +23,7 @@ const Hero = () => {
 
             <CustomButton 
               title="Quiero hablar con un asesor"
-              containerStyles="bg-[#fb6d48]  text-white rounded-full mt-10"
+              containerStyles="bg-[#4964fb]  text-white rounded-full mt-10"
               handleClick={(e) => {
                 window.open('https://api.whatsapp.com/send?phone=573024278167', '_blank')
               }}

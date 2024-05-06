@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
         <Link href='/' className='flex justify-center items-center'>
             <Image
-              src="/logo-text-orange.png"
+              src="/logo-hc2.png"
               alt='HardCol Logo'
               width={118}
               height={18}
@@ -24,7 +24,7 @@ const Navbar = () => {
         <CustomButton 
           title='Comprar'
           btnType="button"
-          containerStyles='text-[#fb6d48] rounded-full bg-white min-w-[130px]'
+          containerStyles='text-white rounded-full xl:bg-white min-w-[130px] sm:bg-[#4964fb] xl:text-[#4964fb]'
           textStyles='font-extrabold'
           handleClick={(e) => {
             window.open('https://api.whatsapp.com/send?phone=573024278167', '_blank');

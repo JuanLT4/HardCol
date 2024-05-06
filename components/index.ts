@@ -7,6 +7,7 @@ import SearchBar from './SearchBar';
 import SearchManufacturer from './SearchManufacturer';
 import ComputerCard  from './ComputerCard';
 import ComputerDetails from './ComputerDetails';
+import Flyer from './Flyer';
 
 export {
     Hero,
@@ -18,4 +19,5 @@ export {
     SearchManufacturer,
     ComputerCard,
     ComputerDetails,
+    Flyer,
 }

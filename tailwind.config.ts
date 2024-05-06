@@ -29,7 +29,7 @@ module.exports = {
       },
       backgroundImage: {
         'pattern': "url('/pattern-orange.png')",
-        'hero-bg': "url('/hero-bg.png')"
+        'hero-bg': "url('/hero-bg-blue.png')"
       }
     },
   },
