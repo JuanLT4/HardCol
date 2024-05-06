@@ -35,6 +35,7 @@ export interface ComputerProps {
     ssd: string;
     cooling?: string;
     chasis: string;
+    salePrice: string;
     price: string;
     imgs: string[];
 }

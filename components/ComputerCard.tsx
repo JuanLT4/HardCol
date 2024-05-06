@@ -8,7 +8,7 @@ import ComputerDetails from './ComputerDetails'
 
 const ComputerCard = ({ computer }: ComputerCardProps) => {
 
-  const { cpu, vga, motherBoard, powerSupply, ram, ssd, cooling, chasis, price, imgs } = computer
+  const { cpu, vga, motherBoard, powerSupply, ram, ssd, cooling, chasis, price, imgs, salePrice } = computer
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -20,9 +20,20 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         </h2>
       </div>
 
-      <p className='flex mt-6 text-[32px] font-extrabold'>
+      <div className='flex mt-1 text-[20px] font-extrabold items-end flex-col w-full'>
+        <p className='flex flex-col items-end justify-end'>
+        <span className='text-[14px]'>
+          Precio regular
+        </span>
+        <span className='text-gray-500 line-through	'>
+          $ {salePrice}  
+        </span>
+        </p>
+      </div>
+
+      <p className='flex mt-1 text-[32px] font-extrabold'>
         <span className='self-start text-[14px]'>
-          $
+          -20%
         </span>
         <span className='text-[#fb6d48]'>
           {price}  

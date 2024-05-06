@@ -55,11 +55,11 @@ export default function Home() {
 
         <div className="home__filters">
           <SearchBar onModelChange={handleModelChange} />
-
+{/* 
           <div className="home__filter-container">
             <CustomFilter title="fuel" options={fuels} onModelChange={handleFilter1Change} />
             <CustomFilter title="year" options={yearsOfProduction} onModelChange={handleFilter2Change} />
-          </div>
+          </div> */}
         </div>
 
         {!isDataEmpty ? (
