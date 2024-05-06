@@ -17,7 +17,7 @@ export interface CustomButtonProps {
 export interface CustomFilterProps {
     title: string;
     options: { title:string; value:string}[];
-    onModelChange: (model: string) => void;
+    onModelChange: (value: string) => void;
 }
 
 export interface SearchManufacturerProps {

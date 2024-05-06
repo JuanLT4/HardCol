@@ -140,7 +140,7 @@ body {
 
 /* START: Car Card styles */
 .car-card {
-  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-white hover:bg-primary-blue-100 hover:shadow-lg rounded-3xl shadow-md;
+  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-white hover:bg-primary-blue-100 hover:shadow-black hover:shadow-2xl rounded-3xl shadow-md;
 }
 
 .car-card__content {

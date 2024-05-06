@@ -4,55 +4,51 @@ export const manufacturers = [
   "RYZEN 7 5800X",
 ];
 
-export const yearsOfProduction = [
-  { title: "Year", value: "" },
-  { title: "2015", value: "2015" },
-  { title: "2016", value: "2016" },
-  { title: "2017", value: "2017" },
-  { title: "2018", value: "2018" },
-  { title: "2019", value: "2019" },
-  { title: "2020", value: "2020" },
-  { title: "2021", value: "2021" },
-  { title: "2022", value: "2022" },
-  { title: "2023", value: "2023" },
+export const ssdCapacity = [
+  { title: "Almacenamiento", value: "" },
+  { title: "1TB", value: "1TB" },
+  { title: "500GB", value: "500GB" },
+  { title: "240GB", value: "240GB" },
 ];
 
-export const fuels = [
+export const ramCapacity = [
   {
-    title: "Fuel",
+    title: "Ram",
     value: "",
   },
   {
-    title: "Gas",
-    value: "Gas",
+    title: "8GB",
+    value: "8GB",
   },
   {
-    title: "Electricity",
-    value: "Electricity",
+    title: "16GB",
+    value: "16GB",
+  },
+  {
+    title: "32GB",
+    value: "32GB",
   },
 ];
 
+export const orden = [
+  {
+    title: "Ordenar por",
+    value: "",
+  },
+  {
+    title: "Mayor precio",
+    value: "mayor precio",
+  },
+  {
+    title: "Menor precio",
+    value: "menor precio",
+  },
+
+];
 export const footerLinks = [
+  
   {
-    title: "About",
-    links: [
-      { title: "How it works", url: "/" },
-      { title: "Featured", url: "/" },
-      { title: "Partnership", url: "/" },
-      { title: "Bussiness Relation", url: "/" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { title: "Events", url: "/" },
-      { title: "Blog", url: "/" },
-      { title: "Podcast", url: "/" },
-      { title: "Invite a friend", url: "/" },
-    ],
-  },
-  {
-    title: "Socials",
+    title: "Redes sociales",
     links: [
       { title: "Discord", url: "/" },
       { title: "Instagram", url: "/" },

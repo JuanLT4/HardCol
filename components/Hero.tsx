@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { CustomButton } from '@/components'
 
-const Hero = () => {
+const Hero = ({ children } : {children: React.ReactNode}) => {
   const handleScroll = () => {
 
   }
@@ -16,10 +16,7 @@ const Hero = () => {
               <span className='text-[#4964fb]'>Gaming</span> al siguiente <span className='text-[#4964fb]'>nivel</span>
             </h1>
             <br />
-            <p className='hero__subtitle'>
-            Desata el poder del juego con nuestra gama de computadoras diseñadas para dominar. 
-            ¡Convierte cada partida en una experiencia épica con nuestros equipos gamer de alto rendimiento!
-            </p>
+            {children}
 
             <CustomButton 
               title="Quiero hablar con un asesor"
@@ -35,7 +32,7 @@ const Hero = () => {
               src={"/musetex-black.png"} 
               alt='hero'
               fill 
-              className='object-contain'
+              className='object-contain animate__animated animate__bounceInRight'
             />
           </div>
           

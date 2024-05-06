@@ -43,10 +43,10 @@ const Footer = () => {
                 <p>@2024 HardCol. Todos los derechos reservados</p>
                 
                 <div className='footer__copyrights-link'>
-                    <Link href={'/'} className='text-gray-500' >
+                    <Link href={'/politics'} className='text-gray-500' >
                         Política de Privacidad 
                     </Link>
-                    <Link href={'/'} className='text-gray-500' >
+                    <Link href={'/use-terms'} className='text-gray-500' >
                         Términos de Uso
                     </Link>
                 </div>

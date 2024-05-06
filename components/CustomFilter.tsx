@@ -4,20 +4,31 @@ import { CustomFilterProps } from '@/types'
 import { Listbox, Transition } from '@headlessui/react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import React, { useState, Fragment } from 'react'
+import React, { useState, Fragment, useEffect } from 'react'
 
 
 
 const CustomFilter = ({title, options, onModelChange}: CustomFilterProps) => {
   
   const [selected, setSelected] = useState(options[0]);
+  
+  useEffect(() => {
+    handleUpdateFilter(selected.value)
+  }, [selected])
 
+  const handleUpdateFilter = (value: string) => {
+    onModelChange(value)
+  }
   
   return (
     <div className='w-fit'>
       <Listbox
         value={selected}
-        onChange={(e) => setSelected(e)}
+        onChange={(e) => 
+          {
+            setSelected(e)
+          }
+        }
       >
         <div className='relative w-fit z-10'>
           <Listbox.Button className='custom-filter__btn'>

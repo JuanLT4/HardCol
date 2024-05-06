@@ -67,7 +67,7 @@ const SearchBar = ({ onModelChange }: {
         />
         <input type='text' name='model' onChange={(e) => {
           handleChangeCpu(e)
-        }} placeholder='Buscar por procesador' value={cpu} className='searchbar__input sinEsquinas' />
+        }} placeholder='Procesador' value={cpu} className='searchbar__input sinEsquinas' />
         {/* <SearchButton otherClasses={"sm:hidden"}/> */}
       </div>
       <div className='searchbar__item'>
@@ -81,7 +81,7 @@ const SearchBar = ({ onModelChange }: {
         <input type='text' name='model' onChange={(e) => {
           handleChangeVga(e)
         }}
-          placeholder='Buscar por tarjeta gráfica' value={vga} className='searchbar__input ' />
+          placeholder='Tarjeta gráfica' value={vga} className='searchbar__input ' />
         {/* <SearchButton otherClasses={"sm:hidden"} /> */}
       </div>
       {/* <SearchButton otherClasses={"max-sm:hidden"}/> */}
