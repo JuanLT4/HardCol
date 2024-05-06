@@ -124,17 +124,19 @@ const ComputerDetails = ({
                           containerStyles='text-white rounded-full bg-[#fb6d48] min-w-[130px]'
                           handleClick={(e) => {
                             const message = 
-                            `Estoy interesado en el siguiente producto:%0a%0a` +
-                            `Procesador: ${computer.cpu}%0a` +
-                            `Tarjeta de vídeo: ${computer.vga}%0a` +
-                            `Placa madre: ${computer.motherBoard}%0a` +
-                            `Fuente de poder: ${computer.powerSupply}%0a` +
-                            `RAM: ${computer.ram}%0a` +
-                            `Almacenamiento: ${computer.ssd}%0a` +
-                            `Refrigeración: ${computer.cooling}%0a` +
-                            `Chasis: ${computer.chasis}%0a` +
-                            `Precio: ${computer.price}`;        
-                            window.open(`https://api.whatsapp.com/send?phone=573024278167&text=${encodeURIComponent(message)}`, '_blank');
+                            `Estoy interesado en el siguiente producto:\n\n` +
+                            `Procesador: ${computer.cpu}\n` +
+                            `Tarjeta de vídeo: ${computer.vga}\n` +
+                            `Placa madre: ${computer.motherBoard}\n` +
+                            `Fuente de poder: ${computer.powerSupply}\n` +
+                            `RAM: ${computer.ram}\n` +
+                            `Almacenamiento: ${computer.ssd}\n` +
+                            `Refrigeración: ${computer.cooling}\n` +
+                            `Chasis: ${computer.chasis}\n` +
+                            `Precio: ${computer.price}`;
+        
+                            const whatsappUrl = `https://wa.me/573024278167?text=${encodeURIComponent(message)}`;
+                            window.open(whatsappUrl, '_blank');
                           }}
                         />
                       </div>
