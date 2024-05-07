@@ -25,17 +25,17 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         <span className='text-[14px]'>
           Precio regular
         </span>
-        <span className='text-gray-500 line-through	'>
+        <span className='text-gray-500 line-through'>
           $ {salePrice}  
         </span>
         </p>
       </div>
 
       <p className='flex mt-1 text-[32px] font-bold'>
-        <span className='self-start text-[14px] title-gradient'>
-          -20%
+        <span className='self-start text-[14px] discount-gradient'>
+          {'-20%' + ' '}
         </span>
-        <span className='price-gradient'>
+        <span className='price-gradient font-[900] ml-2'>
           {price}  
         </span>
         <span className='self-end text-[14px]'>
@@ -43,7 +43,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         </span>
       </p>
 
-      <div className='relative w-full h-60 my-3 bg-[#00d4ff] rounded-lg object-contain'>
+      <div className='relative w-full h-60 my-3 background-gradient-blue rounded-lg object-contain'>
         <Image
           src={imgs[0]}
           alt="computer"

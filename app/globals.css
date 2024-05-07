@@ -45,9 +45,19 @@ body {
   background: #f1f1f1;
 }
 
+
+
 .title-gradient{
   background: rgb(8,8,121);
   background: linear-gradient(90deg, rgba(8,8,121,1) 0%, rgba(0,212,255,1) 50%, rgba(8,8,121,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.discount-gradient{
+  background: rgb(8,8,121);
+  background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(8,8,121,1) 50%,  rgba(0,212,255,1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -68,7 +78,7 @@ body {
 
 .background-gradient-blue{
   background: rgb(8,8,121);
-  background: linear-gradient(90deg, rgba(8,8,121,1) 0%, rgba(0,212,255,1) 50%, rgba(8,8,121,1) 100%);
+  background: radial-gradient(circle, rgba(8,8,121,1) 0%, rgba(0,212,255,1) 50%, rgba(8,8,121,1) 100%);
 }
 
 
