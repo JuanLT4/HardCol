@@ -13,7 +13,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='car-card group'>
+    <div className='car-card group animate__animated animate__backInUp'>
       <div className='car-card__content'>
         <h2 className='car-card__content-title'>
           {cpu} {vga}
