@@ -45,6 +45,34 @@ body {
   background: #f1f1f1;
 }
 
+.title-gradient{
+  background: rgb(8,8,121);
+  background: linear-gradient(90deg, rgba(8,8,121,1) 0%, rgba(0,212,255,1) 50%, rgba(8,8,121,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.price-gradient{
+  background: rgb(255,175,95);
+  background: linear-gradient(90deg, rgba(255,175,95,1) 0%, rgba(255,141,0,1) 50%, rgba(255,175,95,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-gradient-orange{
+  background: rgb(255,175,95);
+  background: linear-gradient(90deg, rgba(255,175,95,1) 0%, rgba(255,141,0,1) 50%, rgba(255,175,95,1) 100%);
+}
+
+.background-gradient-blue{
+  background: rgb(8,8,121);
+  background: linear-gradient(90deg, rgba(8,8,121,1) 0%, rgba(0,212,255,1) 50%, rgba(8,8,121,1) 100%);
+}
+
+
+
 .max-width {
   @apply max-w-[1440px] mx-auto;
 }

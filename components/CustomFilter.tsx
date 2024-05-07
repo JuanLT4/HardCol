@@ -30,8 +30,8 @@ const CustomFilter = ({title, options, onModelChange}: CustomFilterProps) => {
           }
         }
       >
-        <div className='relative w-fit z-10'>
-          <Listbox.Button className='custom-filter__btn'>
+        <div className={`relative w-fit`}>
+          <Listbox.Button className={`custom-filter__btn ${title}`}>
             <span className='block truncate'>{selected.title}</span>
             <Image 
               src={"/chevron-up-down.svg"} 
@@ -46,7 +46,7 @@ const CustomFilter = ({title, options, onModelChange}: CustomFilterProps) => {
             leave="transition ease-in duration-100"
             leaveFrom="opacity-100"
             leaveTo="opacity-0">
-             <Listbox.Options className='custom-filter__options'>
+             <Listbox.Options className={`custom-filter__options ${title}`}>
               {options.map((option) => (
                 <Listbox.Option
                   key={option.title}

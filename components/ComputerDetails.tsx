@@ -14,7 +14,7 @@ const ComputerDetails = ({
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className='relative z-10' onClose={closeModal}>
+        <Dialog as="div" className='relative z-50' onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -119,7 +119,7 @@ const ComputerDetails = ({
                       ))}
                       <div className='m-auto w-full flex flex-row justify-center items-center'>
                         <CustomButton
-                          title='Lo quiero!'
+                          title='¡Lo quiero!'
                           btnType="button"
                           containerStyles='text-white rounded-full bg-[#fb6d48] min-w-[130px]'
                           handleClick={(e) => {

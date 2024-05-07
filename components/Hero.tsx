@@ -13,7 +13,7 @@ const Hero = ({ children } : {children: React.ReactNode}) => {
     <div className='hero'>
         <div className='flex-1 pt-36 padding-x'>
             <h1 className='hero__title'>
-              <span className='text-[#4964fb]'>Gaming</span> al siguiente <span className='text-[#4964fb]'>nivel</span>
+              <span className='title-gradient'>Gaming</span> al siguiente <span className='title-gradient'>nivel</span>
             </h1>
             <br />
             {children}

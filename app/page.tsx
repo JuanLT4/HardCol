@@ -80,16 +80,16 @@ export default function Home() {
 
   }
 
-  const allComputers: ComputerProps[] = computers
-  let filterComputers = (cpu === "" && vga === "") ? allComputers : allComputers.filter((computer) => {
+  // const allComputers: ComputerProps[] = computers
+  // let filterComputers = (cpu === "" && vga === "") ? allComputers : allComputers.filter((computer) => {
 
-    const formattedCpuModel = cpu.toLowerCase().replace(/\s+/g, "");
-    const formattedVgaModel = vga.toLowerCase().replace(/\s+/g, "");
+  //   const formattedCpuModel = cpu.toLowerCase().replace(/\s+/g, "");
+  //   const formattedVgaModel = vga.toLowerCase().replace(/\s+/g, "");
 
-    const concatenatedModels = (computer.cpu + computer.vga).toLowerCase().replace(/\s+/g, "");
-    return concatenatedModels.includes(formattedCpuModel) && concatenatedModels.includes(formattedVgaModel);
+  //   const concatenatedModels = (computer.cpu + computer.vga).toLowerCase().replace(/\s+/g, "");
+  //   return concatenatedModels.includes(formattedCpuModel) && concatenatedModels.includes(formattedVgaModel);
 
-  })
+  // })
 
   const isDataEmpty = !Array.isArray(_allComputers) || _allComputers.length < 1 || !_allComputers
 
@@ -114,9 +114,9 @@ export default function Home() {
           <SearchBar onModelChange={handleModelChange} />
 
           <div className="home__filter-container">
-            <CustomFilter title="Almacenamiento" options={ssdCapacity} onModelChange={handleSsdChange} />
-            <CustomFilter title="Ram" options={ramCapacity} onModelChange={handleRamChange} />
-            <CustomFilter title="Orden" options={orden} onModelChange={handleOrderChange} />
+            <CustomFilter title="z-[11]" options={ssdCapacity} onModelChange={handleSsdChange} />
+            <CustomFilter title="z-[10]" options={ramCapacity} onModelChange={handleRamChange} />
+            <CustomFilter title="z-[9]" options={orden} onModelChange={handleOrderChange} />
           </div>
           <button onClick={() => {
             handleApplyFilters()

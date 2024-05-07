@@ -50,8 +50,7 @@ const page = () => {
                   Todos los derechos de propiedad intelectual en nuestros
                   servicios (incluidos textos, gráficos, logotipos, iconos,
                   imágenes, clips de audio, descargas digitales, compilaciones
-                  de datos y software) son propiedad de [Nombre de la Tienda de
-                  Hardware Gaming] o de sus licenciantes.
+                  de datos y software) son propiedad de Hardcol o de sus licenciantes.
                 </li>
               </ul>
             </li>
@@ -70,8 +69,7 @@ const page = () => {
               <p>Limitación de Responsabilidad:</p>
               <ul>
                 <li>
-                  En la medida máxima permitida por la ley aplicable, [Nombre de
-                  la Tienda de Hardware Gaming] y sus afiliados no serán
+                  En la medida máxima permitida por la ley aplicable, Hardcol y sus afiliados no serán
                   responsables por ningún daño directo, indirecto, incidental,
                   especial, consecuente o punitivo que surja de o esté
                   relacionado con el uso de nuestros servicios.

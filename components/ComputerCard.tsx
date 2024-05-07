@@ -32,10 +32,10 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
       </div>
 
       <p className='flex mt-1 text-[32px] font-bold'>
-        <span className='self-start text-[14px]'>
+        <span className='self-start text-[14px] title-gradient'>
           -20%
         </span>
-        <span className='text-[#fb6d48]'>
+        <span className='price-gradient'>
           {price}  
         </span>
         <span className='self-end text-[14px]'>
@@ -43,7 +43,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         </span>
       </p>
 
-      <div className='relative w-full h-60 my-3 bg-[#FFC100] rounded-lg object-contain'>
+      <div className='relative w-full h-60 my-3 bg-[#00d4ff] rounded-lg object-contain'>
         <Image
           src={imgs[0]}
           alt="computer"
@@ -93,9 +93,9 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
         <div className='car-card__btn-container'>
           <CustomButton
             title='Ver Más'
-            containerStyles='w-full py-[16px] rounded-full bg-[#4964fb]'
+            containerStyles='w-full py-[16px] rounded-full background-gradient-orange'
             btnType="button"
-            textStyles="text-white text-[14px] leading-[17px] font-bold"
+            textStyles="text-white text-[18px] leading-[17px] font-extrabold"
             rightIcon="/right-arrow.svg"
             handleClick={() => setIsOpen(true)}
           />
