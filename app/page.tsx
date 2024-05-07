@@ -5,12 +5,16 @@ import { Hero, CustomFilter, SearchBar, ComputerCard, Flyer } from "@/components
 import type { ComputerProps } from "@/types";
 import { computers, ramCapacity, ssdCapacity, orden } from "@/constants";
 import { useEffect, useState } from "react";
+import ShowMore from "@/components/ShowMore";
 
 
 
 
 export default function Home() {
-
+  // Estado para controlar la página actual
+  
+  // Array de los elementos que se mostrarán en la página actual
+  
   const [cpu, setCpu] = useState('');
   const [vga, setVga] = useState('');
   const [ram, setRam] = useState('');
@@ -20,6 +24,21 @@ export default function Home() {
   const [_allComputers, setAllComputers] = useState(computers); // Debes definir y establecer este estado
   const [_filterComputers, setFilterComputers] = useState(computers); // Debes definir y establecer este estado
 
+  // PAGINACIOOOOOOOOOOOOOOOOOOON
+  
+  const [displayCount, setDisplayCount] = useState(8);
+  const computersPerPage = 8; // Número de elementos que se añaden por página
+
+  // Array de los elementos que se mostrarán hasta el momento
+  const currentComputers = _filterComputers.slice(0, displayCount);
+
+  // Función para cargar más elementos
+  const handleShowMore = () => {
+    setDisplayCount(prevDisplayCount => prevDisplayCount + computersPerPage);
+  };
+
+  // Determina si hay más elementos para mostrar
+  const moreComputersAvailable = computers.length > displayCount;
   // useEffect(() => {
 
   // }, [ram, ssd]);
@@ -76,6 +95,7 @@ export default function Home() {
       return concatenatedModels.includes(formattedCpuModel) && concatenatedModels.includes(formattedVgaModel);
     });
     setFilterComputers(finalFiltered);
+    setDisplayCount(8)
     console.log(_filterComputers);
 
   }
@@ -127,8 +147,8 @@ export default function Home() {
           <section>
             {isSortingHigh ? (
               <div className="home__cars-wrapper">
-                {cpu == "" && vga === "" ? '' : ''}
-                {_filterComputers.sort((a, b) => {
+  
+                {currentComputers.sort((a, b) => {
                   if (a.price > b.price) {
                     return -1;
                   }
@@ -140,10 +160,9 @@ export default function Home() {
                 }).map((computer: ComputerProps, index: number) => (
                   <ComputerCard computer={computer} key={index} />
                 ))}
-
               </div>
             ) : (<div className="home__cars-wrapper">
-              {_filterComputers.sort((a, b) => {
+              {currentComputers.sort((a, b) => {
                 if (a.price > b.price) {
                   return 1;
                 }
@@ -157,6 +176,20 @@ export default function Home() {
               ))}
             </div>)
             }
+              {moreComputersAvailable && (
+             <ShowMore 
+             pageNumber={ (10 / 10)}
+             isNext={10 > _filterComputers.length}
+             handleClick={
+              () => {
+                handleShowMore();
+                console.log(currentComputers.length);
+              }
+             }
+
+           />
+      )}
+       
           </section>
         ) : (
           <div className="home__error-container">

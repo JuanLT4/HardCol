@@ -1,6 +1,4 @@
 import { MouseEventHandler } from "react";
-import SearchManufacturer from '../components/SearchManufacturer';
-import ComputerCard from '@/components/ComputerCard';
 
 export interface CustomButtonProps {
     title: string;
@@ -13,6 +11,13 @@ export interface CustomButtonProps {
     isDisabled?: boolean;
     onClick?: MouseEventHandler<HTMLButtonElement>;
 }
+
+
+export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
+    handleClick?: MouseEventHandler<HTMLButtonElement>;
+  }
 
 export interface CustomFilterProps {
     title: string;
