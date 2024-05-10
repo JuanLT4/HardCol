@@ -186,7 +186,7 @@ const ComputerDetails = ({
                               `Cupon: ${cupon}\n` +
                               `Precio: ${computer.price}`;
 
-                            const whatsappUrl = `https://wa.me/573102938478?text=${encodeURIComponent(message)}`;
+                            const whatsappUrl = `https://wa.me/573024278167?text=${encodeURIComponent(message)}`;
                             window.open(whatsappUrl, '_blank');
                           }}
                         />
