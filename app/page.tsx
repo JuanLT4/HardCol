@@ -3,18 +3,19 @@
 import Image from "next/image";
 import { Hero, CustomFilter, SearchBar, ComputerCard, Flyer } from "@/components"
 import type { ComputerProps } from "@/types";
-import { computers, ramCapacity, ssdCapacity, orden } from "@/constants";
+import { computers, ramCapacity, ssdCapacity, orden, products} from "@/constants";
 import { useEffect, useState } from "react";
 import ShowMore from "@/components/ShowMore";
+import ComputerBuilder from "@/components/ComputerBuilder";
 
 
 
 
 export default function Home() {
   // Estado para controlar la página actual
-  
+
   // Array de los elementos que se mostrarán en la página actual
-  
+
   const [cpu, setCpu] = useState('');
   const [vga, setVga] = useState('');
   const [ram, setRam] = useState('');
@@ -25,7 +26,7 @@ export default function Home() {
   const [_filterComputers, setFilterComputers] = useState(computers); // Debes definir y establecer este estado
 
   // PAGINACIOOOOOOOOOOOOOOOOOOON
-  
+
   const [displayCount, setDisplayCount] = useState(8);
   const computersPerPage = 8; // Número de elementos que se añaden por página
 
@@ -116,15 +117,15 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Hero>
-      <p className='hero__subtitle'>
-            Desata el poder del juego con nuestra gama de computadoras diseñadas para dominar. 
-            ¡Convierte cada partida en una experiencia épica con nuestros equipos gamer de alto rendimiento!
-      </p>
+        <p className='hero__subtitle'>
+          Desata el poder del juego con nuestra gama de computadoras diseñadas para dominar.
+          ¡Convierte cada partida en una experiencia épica con nuestros equipos gamer de alto rendimiento!
+        </p>
       </Hero>
       {/* <Flyer /> */}
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold">
+          <h1 className="text-4xl font-extrabold title-gradient py-2">
             Catálogo
           </h1>
           <p>Encuentra el equipo perfecto para ti.</p>
@@ -138,6 +139,8 @@ export default function Home() {
             <CustomFilter title="z-[10]" options={ramCapacity} onModelChange={handleRamChange} />
             <CustomFilter title="z-[9]" options={orden} onModelChange={handleOrderChange} />
           </div>
+        </div>
+        <div className="w-fit justify-start mt-2">
           <button onClick={() => {
             handleApplyFilters()
           }} className="text-white text-[14px] rounded-lg bg-primary-blue p-2">Aplicar Filtros</button>
@@ -147,7 +150,7 @@ export default function Home() {
           <section>
             {isSortingHigh ? (
               <div className="home__cars-wrapper">
-  
+
                 {currentComputers.sort((a, b) => {
                   if (a.price > b.price) {
                     return -1;
@@ -176,28 +179,30 @@ export default function Home() {
               ))}
             </div>)
             }
-              {moreComputersAvailable && (
-             <ShowMore 
-             pageNumber={ (10 / 10)}
-             isNext={10 > _filterComputers.length}
-             handleClick={
-              () => {
-                handleShowMore();
-                console.log(currentComputers.length);
-              }
-             }
+            {moreComputersAvailable && (
+              <ShowMore
+                pageNumber={(10 / 10)}
+                isNext={10 > _filterComputers.length}
+                handleClick={
+                  () => {
+                    handleShowMore();
+                    console.log(currentComputers.length);
+                  }
+                }
 
-           />
-      )}
-       
+              />
+            )}
+
           </section>
         ) : (
           <div className="home__error-container">
             <h2 className="text-black text-xl font-bold">Oops, no results</h2>
-            <p>Error sisas</p>
+
           </div>
         )}
-
+      </div>
+      <div className="mt-12 padding-x padding-y max-width">
+        <ComputerBuilder products={products}/>
       </div>
     </main>
   );

@@ -8,7 +8,7 @@ import ComputerDetails from './ComputerDetails'
 
 const ComputerCard = ({ computer }: ComputerCardProps) => {
 
-  const { cpu, vga, motherBoard, powerSupply, ram, ssd, cooling, chasis, price, imgs, salePrice } = computer
+  const { cpu, vga, motherBoard, powerSupply, ram, ssd, cooling, chasis, price, imgs, salePrice, discount } = computer
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -21,22 +21,23 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
       </div>
 
       <div className='flex mt-1 text-[20px] font-bold items-end flex-col w-full'>
-        <p className='flex flex-col items-end justify-end'>
+        <div className='flex flex-col items-end justify-end w-full'>
         <span className='text-[14px]'>
           Precio regular
         </span>
-        <span className='text-gray-500 line-through'>
-          $ {salePrice}  
-        </span>
-        </p>
+        <div className='flex flex-row w-full justify-between'>
+          <span className={`w-fit p-1 text-[16px] text-center rounded-md text-white pr-3 pl-2 justify-start ${discount === "15%" ? 'discount-gradient-off-green' : discount === "20%" ? 'discount-gradient-off-blue' : discount === "25%" ? 'discount-gradient-off-red' : ''}`}>{" " + discount} Off </span>
+          <span className='text-gray-500 line-through justify-end'>
+            $ {salePrice}  
+          </span>
+        </div>
+        </div>
       </div>
 
       <p className='flex mt-1 text-[32px] font-bold'>
-        <span className='self-start text-[14px] discount-gradient'>
-          {'-20%' + ' '}
-        </span>
+
         <span className='price-gradient font-[900] ml-2'>
-          {price}  
+          <span className='text-[20px]'>$</span> {price}  
         </span>
         <span className='self-end text-[14px]'>
           COP
@@ -85,7 +86,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
               alt='ssd'
             />
             <p className='text-[14px]'>
-              {ssd === 'Crucial P3 1TB NVMe'? 'Crucial 1TB' : ssd === 'Wester Digital 1TB Blue SN580 NVMe' ? 'WD 1TB' : ssd === 'Samsung 990 EVO 1TB NVMe' ? 'Samsung 1TB' : ssd}
+              {ssd === 'Crucial P3 1TB NVMe'? 'Crucial 1TB' : ssd === 'Wester Digital 1TB Blue SN580 NVMe' ? 'WD 1TB' : ssd === 'Samsung 990 EVO 1TB NVMe' ? 'Samsung 1TB' : ssd === 'Crucial P3 500GB NVMe' ? 'Crucial 500GB' : ssd}
             </p>
           </div>
         </div>

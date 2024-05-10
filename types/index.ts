@@ -41,6 +41,7 @@ export interface ComputerProps {
     cooling?: string;
     chasis: string;
     salePrice: string;
+    discount: string;
     price: string;
     imgs: string[];
 }
