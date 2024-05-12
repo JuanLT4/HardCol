@@ -45,8 +45,65 @@ body {
   background: #f1f1f1;
 }
 
+#CPU{
+  position: absolute;
+  z-index: 40;
+}
 
+#VGA{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 40;
+}
 
+#MOTHER_BOARD{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+}
+
+#POWER_SUPPLY{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 40;
+}
+
+#RAM{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+}
+
+#SSD{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 40;
+}
+
+#CHASIS{
+  position: absolute;
+ 
+  z-index: 30;
+}
+
+#COOLING{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
+
+/* #computer-builder-imgs{
+  position: sticky;
+  top: 0;
+} */
 
 .title-gradient{
   background: rgb(8,8,121);

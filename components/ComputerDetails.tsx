@@ -29,7 +29,7 @@ const ComputerDetails = ({
     if(cupons.includes(cupon.toUpperCase())) {
       setIsCuponValid(true)
       if (!isCuponApplied) {
-        computer.price = Math.floor((parseFloat(computer.price.replace(/\./g, '')) * 0.95)).toString()
+        computer.price = Math.floor((parseFloat(computer.price.replace(/\./g, '')) * 0.98)).toString()
         computer.price = computer.price.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
         setIsCuponApplied(true)
       }  
@@ -141,10 +141,7 @@ const ComputerDetails = ({
                             <p className='text-black-100 font-semibold'>$ {value} COP</p>
                           </div>
                         ) : key === "discount" ? (
-                          <div className='flex justify-between gap-5 w-full text-right' key={key}>
-                            <h4 className='text-grey capitalize'>{'Descuento'.split("_").join(" ")}</h4>
-                            <p className={`w-fit font-bold p-1 text-[16px] text-center rounded-md text-white pr-3 pl-2 justify-start ${value === "15%" ? 'discount-gradient-off-green' : value === "20%" ? 'discount-gradient-off-blue' : value === "25%" ? 'discount-gradient-off-red' : ''}`}>{value} Off</p>
-                          </div>
+                            ''
                         ) : (
                           <div className='flex justify-between gap-5 w-full text-right' key={key}>
                             <h4 className='text-grey capitalize'>{key.split("_").join(" ")}</h4>
