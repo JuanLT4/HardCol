@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { productsImgsStyles } from '../constants/index';
 import Image from 'next/image';
 import CustomButton from '@/components/CustomButton';
-import { title } from 'process';
 
 
 interface Product {
@@ -125,7 +124,8 @@ const ComputerBuilder = ({ products }: Props) => {
             </div>
           ))}
           <div>
-            <h3 className="text-xl font-semibold">Total: ${calculateTotal().toFixed(2)} <CustomButton title={'¡Lo quiero!'} handleClick={() => {
+            <h4 className="text-xl font-semibold">Total: ${calculateTotal().toFixed(2)} <CustomButton title={'¡Lo quiero!'} btnType="button"
+              containerStyles='text-white rounded-full bg-[#fb6d48] min-w-[130px]' handleClick={() => {
                 let message = ``
                 for (let item in selectedItems) {
                   message += `${item} - ${selectedItems[item].title} - ${selectedItems[item].selectedColor} - ${selectedItems[item].colors.find(color => color.title === selectedItems[item].selectedColor)?.price} - ${selectedItems[item].colors.find(color => color.title === selectedItems[item].selectedColor)?.img} \n`;
@@ -134,7 +134,8 @@ const ComputerBuilder = ({ products }: Props) => {
 
                 const whatsappUrl = `https://wa.me/573024278167?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
-            }}/></h3>
+              }} />
+            </h4>
           </div>
         </div>
         <div id="computer-builder-imgs" className="w-[100%] lg:w-[600px] flex justify-center items-center relative h-[500px] m-auto">
@@ -143,21 +144,21 @@ const ComputerBuilder = ({ products }: Props) => {
             return (
               <div key={index} id={category}>
                 {category === "CPU" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "VGA" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "MOTHER_BOARD" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "POWER_SUPPLY" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "RAM" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "SSD" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "COOLING" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={140} height={140} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={140} height={140} />
                 ) : category === "CHASIS" ? (
-                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]" width={500} height={500} />
+                  <Image src={item.colors.find(color => color.title === item.selectedColor)?.img || ''} alt={item.title} className="object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]" width={500} height={500} />
                 ) : ''}
               </div>
             );

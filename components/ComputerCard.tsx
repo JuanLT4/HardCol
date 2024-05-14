@@ -86,7 +86,7 @@ const ComputerCard = ({ computer }: ComputerCardProps) => {
               alt='ssd'
             />
             <p className='text-[14px]'>
-              {ssd === 'Crucial P3 1TB NVMe'? 'Crucial 1TB' : ssd === 'Wester Digital 1TB Blue SN580 NVMe' ? 'WD 1TB' : ssd === 'Samsung 990 EVO 1TB NVMe' ? 'Samsung 1TB' : ssd === 'Crucial P3 500GB NVMe' ? 'Crucial 500GB' : ssd}
+              {ssd === 'Crucial P3 1TB NVMe'? 'Crucial 1TB' : ssd === 'Wester Digital 1TB Blue SN580 NVMe' ? 'WD 1TB' : ssd === 'Samsung 990 EVO 1TB NVMe' ? 'Samsung 1TB' : ssd === 'Crucial P3 500GB NVMe' ? 'Crucial 500GB' : ssd === 'KINGSTON 1TB NVMe' ? 'Kingston 1TB' : ssd}
             </p>
           </div>
         </div>

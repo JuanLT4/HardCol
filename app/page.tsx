@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { Hero, CustomFilter, SearchBar, ComputerCard, Flyer } from "@/components"
+import { Hero, CustomFilter, SearchBar, ComputerCard, Flyer, Navbar } from "@/components"
 import type { ComputerProps } from "@/types";
 import { computers, ramCapacity, ssdCapacity, orden, products} from "@/constants";
 import { useEffect, useState } from "react";
 import ShowMore from "@/components/ShowMore";
 import ComputerBuilder from "@/components/ComputerBuilder";
+import Link from "next/link";
 
 
 
@@ -115,95 +116,95 @@ export default function Home() {
   const isDataEmpty = !Array.isArray(_allComputers) || _allComputers.length < 1 || !_allComputers
 
   return (
-    <main className="overflow-hidden">
-      <Hero>
-        <p className='hero__subtitle'>
-          Desata el poder del juego con nuestra gama de computadoras diseñadas para dominar.
-          ¡Convierte cada partida en una experiencia épica con nuestros equipos gamer de alto rendimiento!
-        </p>
-      </Hero>
-      {/* <Flyer /> */}
-      <div className="mt-12 padding-x padding-y max-width" id="discover">
-        <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold title-gradient py-2">
-            Catálogo
-          </h1>
-          <p>Encuentra el equipo perfecto para ti.</p>
-        </div>
-
-        <div className="home__filters">
-          <SearchBar onModelChange={handleModelChange} />
-
-          <div className="home__filter-container">
-            <CustomFilter title="z-[11]" options={ssdCapacity} onModelChange={handleSsdChange} />
-            <CustomFilter title="z-[10]" options={ramCapacity} onModelChange={handleRamChange} />
-            <CustomFilter title="z-[9]" options={orden} onModelChange={handleOrderChange} />
+    <>
+      <Navbar />
+      <main className="overflow-hidden">
+        <Hero>
+          <p className='hero__subtitle'>
+            Desata el poder del juego con nuestra gama de computadoras diseñadas para dominar.
+            ¡Convierte cada partida en una experiencia épica con nuestros equipos gamer de alto rendimiento!
+          </p>
+        </Hero>
+        {/* <Flyer /> */}
+        <div className="mt-12 padding-x padding-y max-width" id="discover">
+          <div className="home__text-container">
+            <h1 className="text-4xl font-extrabold title-gradient py-2">
+              Catálogo
+            </h1>
+            <p>Encuentra el equipo perfecto para ti &nbsp; &nbsp; <Link href={'/products'} ><span className="all-products-gradient cursor-pointer font-bold"> Ver todos los productos</span></Link> </p>
           </div>
-        </div>
-        <div className="w-fit justify-start mt-2">
-          <button onClick={() => {
-            handleApplyFilters()
-          }} className="text-white text-[14px] rounded-lg bg-primary-blue p-2">Aplicar Filtros</button>
-        </div>
 
-        {!isDataEmpty ? (
-          <section>
-            {isSortingHigh ? (
-              <div className="home__cars-wrapper">
+          <div className="home__filters">
+            <SearchBar onModelChange={handleModelChange} />
 
+            <div className="home__filter-container">
+              <CustomFilter title="z-[11]" options={ssdCapacity} onModelChange={handleSsdChange} />
+              <CustomFilter title="z-[10]" options={ramCapacity} onModelChange={handleRamChange} />
+              <CustomFilter title="z-[9]" options={orden} onModelChange={handleOrderChange} />
+            </div>
+          </div>
+          <div className="w-fit justify-start mt-2">
+            <button onClick={() => {
+              handleApplyFilters()
+            }} className="text-white text-[14px] rounded-lg bg-primary-blue p-2">Aplicar Filtros</button>
+          </div>
+
+          {!isDataEmpty ? (
+            <section>
+              {isSortingHigh ? (
+                <div className="home__cars-wrapper">
+
+                  {currentComputers.sort((a, b) => {
+                    if (a.price > b.price) {
+                      return -1;
+                    }
+                    if (a.price < b.price) {
+                      return 1;
+                    }
+                    // a must be equal to b
+                    return 0;
+                  }).map((computer: ComputerProps, index: number) => (
+                    <ComputerCard computer={computer} key={index} />
+                  ))}
+                </div>
+              ) : (<div className="home__cars-wrapper">
                 {currentComputers.sort((a, b) => {
                   if (a.price > b.price) {
-                    return -1;
+                    return 1;
                   }
                   if (a.price < b.price) {
-                    return 1;
+                    return -1;
                   }
                   // a must be equal to b
                   return 0;
                 }).map((computer: ComputerProps, index: number) => (
                   <ComputerCard computer={computer} key={index} />
                 ))}
-              </div>
-            ) : (<div className="home__cars-wrapper">
-              {currentComputers.sort((a, b) => {
-                if (a.price > b.price) {
-                  return 1;
-                }
-                if (a.price < b.price) {
-                  return -1;
-                }
-                // a must be equal to b
-                return 0;
-              }).map((computer: ComputerProps, index: number) => (
-                <ComputerCard computer={computer} key={index} />
-              ))}
-            </div>)
-            }
-            {moreComputersAvailable && (
-              <ShowMore
-                pageNumber={(10 / 10)}
-                isNext={10 > _filterComputers.length}
-                handleClick={
-                  () => {
-                    handleShowMore();
-                    console.log(currentComputers.length);
+              </div>)
+              }
+              {moreComputersAvailable && (
+                <ShowMore
+                  pageNumber={(10 / 10)}
+                  isNext={10 > _filterComputers.length}
+                  handleClick={
+                    () => {
+                      handleShowMore();
+                      console.log(currentComputers.length);
+                    }
                   }
-                }
 
-              />
-            )}
+                />
+              )}
 
-          </section>
-        ) : (
-          <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">Oops, no results</h2>
+            </section>
+          ) : (
+            <div className="home__error-container">
+              <h2 className="text-black text-xl font-bold">Oops, no results</h2>
 
-          </div>
-        )}
-      </div>
-      <div className="mt-12 padding-x padding-y max-width">
-        <ComputerBuilder products={products}/>
-      </div>
-    </main>
+            </div>
+          )}
+        </div>
+      </main>
+    </>
   );
 }

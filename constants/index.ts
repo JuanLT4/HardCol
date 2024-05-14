@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const manufacturers = [];
 
 export const ssdCapacity = [
@@ -76,14 +74,14 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 80, 
-            img: '/combos/componentes/',
+            price: 82, 
+            img: '/combos/componentes/cases/imgs/XPG-VALORAIR-BLACK-1000x1000.png',
           },
           { 
             title: "Blanco", 
             color: "#ffffff", 
             price: 68,
-            img: '/combos/componentes/',
+            img: '/combos/componentes/cases/imgs/XPG-VALORAIR-WHITE-1000x1000.png',
           }
         ],
       },
@@ -117,7 +115,7 @@ export const products = [
             title: "Blanco", 
             color: "#ffffff", 
             price: 100,
-            img: '',
+            img: '/combos/componentes/cases/imgs/MUSETEX-K2-WHITE-1000x1000.png',
           }
         ],
       },
@@ -132,7 +130,7 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 120,
+            price: 144,
             img: '/combos/componentes/cpus/imgs/RYZEN5-5500-5600-5600x-1000x1000.png',
           }
         ],
@@ -143,7 +141,7 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 167,
+            price: 170,
             img: '/combos/componentes/cpus/imgs/RYZEN7-5700X-5800X-1000x1000.png',
           }
         ],
@@ -154,7 +152,7 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 175,
+            price: 250,
             img: '/combos/componentes/cpus/imgs/RYZEN7-5700X-5800X-1000x1000.png',
           }
         ],
@@ -217,7 +215,7 @@ export const products = [
         colors: [
           { 
             title: "Negro", 
-            color: "#000000", 
+            color: "#EFF3F5", 
             price: 90, 
             img: '/combos/componentes/motherBoards/imgs/ASROCK-B550-1000x1000.png',
           }
@@ -304,7 +302,7 @@ export const products = [
         colors: [
           { 
             title: "Negro", 
-            color: "#000000", 
+            color: "arcoiris", 
             price: 81, 
             img: '/combos/componentes/rams/imgs/CORSAIR-32GB-RGB.png',
           }
@@ -359,8 +357,8 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 0,
-            img: '/combos/componentes/',
+            price: 10,
+            img: '/combos/componentes/cooling/imgs/AMD-DEFAULT.png',
           }
         ],
       },
@@ -375,7 +373,7 @@ export const products = [
           },
           { 
             title: "Negro RGB", 
-            color: "#000000", 
+            color: "arcoiris", 
             price: 34, 
             img: '/combos/componentes/cooling/imgs/Peerless-Assassin-120-RGB.png',
           },
@@ -387,7 +385,7 @@ export const products = [
           },
           { 
             title: "Blanco RGB", 
-            color: "#000000", 
+            color: "arcoiris", 
             price: 37, 
             img: '/combos/componentes/cooling/imgs/Peerless-Assassin-WHITE-120-RGB.png',
           }
@@ -420,7 +418,7 @@ export const products = [
         colors: [
           { 
             title: "Negro", 
-            color: "#000000", 
+            color: "arcoiris", 
             price: 51, 
             img: '/combos/componentes/cooling/imgs/Frozen-Notte-240-BLACK.png',
           }
@@ -431,7 +429,7 @@ export const products = [
         colors: [
           { 
             title: "Negro", 
-            color: "#000000", 
+            color: "arcoiris", 
             price: 62, 
             img: '/combos/componentes/cooling/imgs/FROZEN-PRISM-360-BLACK.png',
           }
@@ -474,42 +472,42 @@ export const imgWidths = [
 ]
 
 const prices = [
-  { price: "2.947.862", salePrice: "3.390.041" },
-  { price: "3.045.263", salePrice: "3.502.052" },
-  { price: "3.045.263", salePrice: "3.502.052" },
-  { price: "3.176.870", salePrice: "3.653.400" },
-  { price: "3.221.882", salePrice: "3.705.164" },
-  { price: "3.221.882", salePrice: "3.705.164" },
-  { price: "3.215.850", salePrice: "3.698.227" },
-  { price: "3.260.239", salePrice: "3.749.274" },
-  { price: "3.260.239", salePrice: "3.749.274" },
-  { price: "3.231.519", salePrice: "3.716.246" },
-  { price: "3.327.362", salePrice: "3.992.834" },
-  { price: "3.327.362", salePrice: "3.992.834" },
-  { price: "3.456.863", salePrice: "4.148.235" },
-  { price: "3.552.706", salePrice: "4.263.247" },
-  { price: "3.552.706", salePrice: "4.263.247" },
-  { price: "3.495.219", salePrice: "4.194.262" },
-  { price: "3.532.671", salePrice: "4.239.205" },
-  { price: "3.532.671", salePrice: "4.239.205" },
-  { price: "3.279.465", salePrice: "3.771.384" },
-  { price: "3.375.308", salePrice: "4.050.369" },
-  { price: "3.375.308", salePrice: "4.050.369" },
-  { price: "3.504.808", salePrice: "4.205.769" },
-  { price: "3.542.104", salePrice: "4.250.524" },
-  { price: "3.542.104", salePrice: "4.250.524" },
-  { price: "3.543.165", salePrice: "4.251.798" },
-  { price: "3.579.837", salePrice: "4.295.804" },
-  { price: "3.579.837", salePrice: "4.295.804" },
-  { price: "3.473.644", salePrice: "4.168.372" },
-  { price: "3.511.446", salePrice: "4.213.735" },
-  { price: "3.511.446", salePrice: "4.213.735" },
-  { price: "3.638.841", salePrice: "4.548.551" },
-  { price: "3.733.125", salePrice: "4.666.406" },
-  { price: "3.733.125", salePrice: "4.666.406" },
-  { price: "3.676.574", salePrice: "4.595.717" },
-  { price: "3.770.858", salePrice: "4.713.572" },
-  { price: "3.770.858", salePrice: "4.713.572" },
+  { price: '3.124.875', salePrice: '3.593.606' },
+  { price: '3.222.375', salePrice: '3.705.731' },
+  { price: '3.222.375', salePrice: '3.705.731' },
+  { price: '3.199.599', salePrice: '3.679.538' },
+  { price: '3.295.539', salePrice: '3.789.869' },
+  { price: '3.295.539', salePrice: '3.789.869' },
+  { price: '3.525.093', salePrice: '4.230.111' },
+  { price: '3.619.473', salePrice: '4.524.341' },
+  { price: '3.619.473', salePrice: '4.524.341' },
+  { price: '3.324.321', salePrice: '3.989.185' },
+  { price: '3.420.261', salePrice: '4.104.313' },
+  { price: '3.420.261', salePrice: '4.104.313' },
+  { price: '3.449.043', salePrice: '4.138.851' },
+  { price: '3.544.983', salePrice: '4.253.979' },
+  { price: '3.544.983', salePrice: '4.253.979' },
+  { price: '3.770.481', salePrice: '4.713.101' },
+  { price: '3.864.861', salePrice: '4.831.076' },
+  { price: '3.864.861', salePrice: '4.831.076' },
+  { price: '3.372.291', salePrice: '4.046.749' },
+  { price: '3.468.231', salePrice: '4.161.877' },
+  { price: '3.468.231', salePrice: '4.161.877' },
+  { price: '3.497.013', salePrice: '4.196.415' },
+  { price: '3.534.531', salePrice: '4.241.437' },
+  { price: '3.534.531', salePrice: '4.241.437' },
+  { price: '3.817.671', salePrice: '4.772.088' },
+  { price: '3.912.051', salePrice: '4.890.063' },
+  { price: '3.912.051', salePrice: '4.890.063' },
+  { price: '3.532.171', salePrice: '4.238.605' },
+  { price: '3.626.551', salePrice: '4.533.188' },
+  { price: '3.626.551', salePrice: '4.533.188' },
+  { price: '3.654.865', salePrice: '4.568.581' },
+  { price: '3.749.245', salePrice: '4.686.556' },
+  { price: '3.749.245', salePrice: '4.686.556' },
+  { price: '4.032.385', salePrice: '5.040.481' },
+  { price: '4.126.765', salePrice: '5.158.456' },
+  { price: '4.126.765', salePrice: '5.158.456' }
 ];
 
 export const computers = [

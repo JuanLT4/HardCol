@@ -29,7 +29,9 @@ module.exports = {
       },
       backgroundImage: {
         'pattern': "url('/pattern-orange.png')",
-        'hero-bg': "url('/hero-bg-blue.png')"
+        'hero-bg': "url('/hero-bg-blue.png')",
+        'arcoiris': "linear-gradient(-225deg, rgb(35, 21, 87) 0%, rgb(68, 16, 122) 29%, rgb(255, 19, 97) 67%, rgb(255, 248, 0) 100%)"
+
       }
     },
   },
