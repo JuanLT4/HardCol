@@ -132,7 +132,7 @@ const ComputerBuilder = ({ products }: Props) => {
                 }
                 message += calculateTotal().toFixed(2)
 
-                const whatsappUrl = `https://wa.me/573024278167?text=${encodeURIComponent(message)}`;
+                const whatsappUrl = `https://wa.me/573116378132?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }} />
             </h4>

@@ -19,17 +19,18 @@ const ComputerDetails = ({
 
   const handleCuponClick = () => {
 
-    const cupons = ['SANTIAGO05OFF', 'MATEO05OFF', 'LEDESMA05OFF', 'JHON05OFF']
+    const cupons = ['businessman', 'MATEO05OFF', 'LEDESMA05OFF', 'JHON05OFF', 'kai']
     console.log(cupon)
+    console.log(isCuponApplied)
 
     if(isCuponApplied){
       alert('Un cupón ya ha sido aplicado')
     }
 
-    if(cupons.includes(cupon.toUpperCase())) {
+    if(cupons.includes(cupon.toLowerCase())) {
       setIsCuponValid(true)
       if (!isCuponApplied) {
-        computer.price = Math.floor((parseFloat(computer.price.replace(/\./g, '')) * 0.98)).toString()
+        computer.price = Math.floor((parseFloat(computer.price.replace(/\./g, '')) * 0.975)).toString()
         computer.price = computer.price.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
         setIsCuponApplied(true)
       }  
@@ -126,10 +127,10 @@ const ComputerDetails = ({
                         key === "id" ? ('') : key === "price" ? (
                           <div className='flex justify-between gap-5 w-full text-right' key={key}>
                             <h4 className='text-grey capitalize'>{'Precio Oferta'.split("_").join(" ")}</h4>
-                            <p className='text-[#fb6d48] font-bold text-[20px]'> <span className='text-[#FFC100]'>
+                            <p className='font-bold text-[20px]'> <span className='price-gradient'>
                               {'$ '}
                             </span>
-                              {value}
+                              <span className='title-gradient'>{value}</span>
                               <span className='text-black-100'>
                                 {' COP'}
                               </span>
@@ -168,7 +169,7 @@ const ComputerDetails = ({
                         <CustomButton
                           title='¡Lo quiero!'
                           btnType="button"
-                          containerStyles='text-white rounded-full bg-[#fb6d48] min-w-[130px]'
+                          containerStyles='text-white rounded-full background-gradient-orange min-w-[130px]'
                           handleClick={(e) => {
                             const message =
                               `Estoy interesado en el siguiente producto:\n\n` +
@@ -183,7 +184,7 @@ const ComputerDetails = ({
                               `Cupon: ${cupon}\n` +
                               `Precio: ${computer.price}`;
 
-                            const whatsappUrl = `https://wa.me/573024278167?text=${encodeURIComponent(message)}`;
+                            const whatsappUrl = `https://wa.me/573116378132?text=${encodeURIComponent(message)}`;
                             window.open(whatsappUrl, '_blank');
                           }}
                         />

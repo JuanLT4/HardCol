@@ -130,7 +130,7 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 144,
+            price: 137,
             img: '/combos/componentes/cpus/imgs/RYZEN5-5500-5600-5600x-1000x1000.png',
           }
         ],
@@ -141,7 +141,7 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 170,
+            price: 162,
             img: '/combos/componentes/cpus/imgs/RYZEN7-5700X-5800X-1000x1000.png',
           }
         ],
@@ -152,7 +152,7 @@ export const products = [
           { 
             title: "Negro", 
             color: "#000000", 
-            price: 250,
+            price: 178,
             img: '/combos/componentes/cpus/imgs/RYZEN7-5700X-5800X-1000x1000.png',
           }
         ],
@@ -579,7 +579,7 @@ export const computers = [
     powerSupply: `${products[4].products[0].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[0].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[0].title}`,
     price: `${prices[3].price}`,
     imgs: [
@@ -599,7 +599,7 @@ export const computers = [
     powerSupply: `${products[4].products[0].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[0].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[0].title}`,
     price: `${prices[4].price}`,
     imgs: [
@@ -620,7 +620,7 @@ export const computers = [
     powerSupply: `${products[4].products[0].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[0].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[0].title}`,
     price: `${prices[5].price}`,
     imgs: [
@@ -641,7 +641,7 @@ export const computers = [
     powerSupply: `${products[4].products[0].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[0].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[0].title}`,
     price: `${prices[6].price}`,
     imgs: [
@@ -662,7 +662,7 @@ export const computers = [
     powerSupply: `${products[4].products[0].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[0].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[0].title}`,
     price: `${prices[7].price}`,
     imgs: [
@@ -683,7 +683,7 @@ export const computers = [
     powerSupply: `${products[4].products[0].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[0].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[0].title}`,
     price: `${prices[8].price}`,
     imgs: [
@@ -765,7 +765,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[12].price}`,
     imgs: [
@@ -785,7 +785,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[13].price}`,
     imgs: [
@@ -805,7 +805,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[14].price}`,
     imgs: [
@@ -825,7 +825,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[15].price}`,
     imgs: [
@@ -845,7 +845,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[16].price}`,
     imgs: [
@@ -865,7 +865,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     imgs: [
       "/combos/GMEDIA-ASROCK-5800-RX6600.png",
@@ -945,7 +945,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[21].price}`,
     imgs: [
@@ -965,7 +965,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[22].price}`,
     imgs: [
@@ -985,7 +985,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[23].price}`,
     imgs: [
@@ -1005,7 +1005,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[24].price}`,
     imgs: [
@@ -1025,7 +1025,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[25].price}`,
     imgs: [
@@ -1045,7 +1045,7 @@ export const computers = [
     powerSupply: `${products[4].products[1].title}`,
     ram: `${products[5].products[0].title}`,
     ssd: `${products[6].products[1].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[1].title}`,
     price: `${prices[26].price}`,
     imgs: [
@@ -1065,7 +1065,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[27].price}`,
     imgs: [
@@ -1085,7 +1085,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[28].price}`,
     imgs: [
@@ -1105,7 +1105,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[29].price}`,
     imgs: [
@@ -1125,7 +1125,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[30].price}`,
     imgs: [
@@ -1145,7 +1145,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[31].price}`,
     imgs: [
@@ -1165,7 +1165,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[32].price}`,
     imgs: [
@@ -1185,7 +1185,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[33].price}`,
     imgs: [
@@ -1205,7 +1205,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[34].price}`,
     imgs: [
@@ -1225,7 +1225,7 @@ export const computers = [
     powerSupply: `${products[4].products[2].title}`,
     ram: `${products[5].products[1].title}`,
     ssd: `${products[6].products[2].title}`,
-    cooling: "Sin Disipad7r",
+    cooling: "Sin Disipador",
     chasis: `${products[0].products[2].title}`,
     price: `${prices[35].price}`,
     imgs: [

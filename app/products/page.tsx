@@ -48,7 +48,7 @@ const addToCart = (variant: ColorVariant) => {
           <Image src={variant.img} alt={variant.title} width={80} height={80} className="object-cover mr-4" />
           <div>
             {/* <h4 className="text-md font-semibold">{variant.title}</h4> */}
-            <p className="text-sm">${(Math.floor(variant.price * 1.15 * 3900)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>
+            <p className="text-sm">${(Math.floor(variant.price * 3900)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>
             { variant.color === "arcoiris" ? (
             <div className="w-6 h-6 rounded-full border bg-arcoiris border-black"></div>
             ) : (

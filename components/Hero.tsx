@@ -22,7 +22,7 @@ const Hero = ({ children } : {children: React.ReactNode}) => {
               title="Quiero hablar con un asesor"
               containerStyles="bg-[#4964fb]  text-white rounded-full mt-10"
               handleClick={(e) => {
-                window.open('https://api.whatsapp.com/send?phone=573024278167', '_blank')
+                window.open('https://api.whatsapp.com/send?phone=573116378132', '_blank')
               }}
             />
         </div>
